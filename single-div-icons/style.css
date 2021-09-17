@@ -1,0 +1,127 @@
+#icon-grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 20px;
+  }
+  /*Whatsapp Icon*/
+  #whats-app {
+    background-color: #25d366;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  #whats-app:before {
+    content: "";
+    background-repeat: no-repeat;
+    background-image: linear-gradient(230deg, transparent 50%, #25d366 51%),
+      radial-gradient(circle, #25d366 70%, transparent 0%),
+      linear-gradient(230deg, transparent 50%, #ffffff 51%),
+      radial-gradient(circle, #ffffff 70%, transparent 0%);
+    background-size: 16px 16px, 60px 60px, 18px 18px, 70px 70px;
+    background-position: 8px 45px, 5px 5px, 3px 48px, 0 0;
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+  }
+  
+  #whats-app:after {
+    content: "";
+    width: 48px;
+    position: absolute;
+    border-radius: 0 0 10px 9px;
+    height: 48px;
+    margin-top: 30px;
+    margin-left: -5px;
+    background-image: linear-gradient(175deg, #25d366 80%, transparent 81%),
+      linear-gradient(193deg, #25d366 80%, transparent 81%),
+      radial-gradient(#ffffff 50%, transparent 51%),
+      radial-gradient(#ffffff 50%, transparent 51%),
+      radial-gradient(#25d366 80%, transparent 51%),
+      radial-gradient(ellipse, #ffffff 70%, transparent 0%);
+    background-size: 12px 10px, 14px 10px, 16px 18px, 15px 18px, 26px 20px,
+      40px 25px;
+    background-repeat: no-repeat;
+    background-position: 32px 4px, 3px 5px, 0px 8px, 30px 6px, 10px 3px, 3px 5px;
+    transform: rotate(45deg);
+  }
+  /*Recorder Icon*/
+  #record {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    background-image: linear-gradient(#ffffff 100%,transparent),linear-gradient(#19ceeb, #3d76e0);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: 1px 12px, 100px 100px;
+    background-position: 45px 67px, 0px 0px;
+  }
+  #record:before {
+    content: "";
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+    border:1px solid #ffffff;
+    position: absolute;
+    margin: 20px 0 0 35px;
+    background-image:linear-gradient(0deg, #ffffff 50%,transparent 51%);
+    background-positon:0 0;
+  }
+  
+  #record:after {
+    content: "";
+    width: 30px;
+    height: 25px;
+    border-radius: 0 0 20px 20px;
+    border: 1px solid #ffffff;
+    border-top:1px solid transparent;
+    position: absolute;
+    margin: 40px 0 0 30px;
+    background-image: linear-gradient(#ff0000 100%, transparent);
+    background-repeat: no-repeat;
+    background-size: 4px 2px;
+    background-position: 11px 57px;
+  }
+  /*Google Icon*/
+  #google {
+     position: relative;
+    border-top: 20px solid #EA4335;
+    border-right: 20px solid #4285F4;
+    border-bottom: 20px solid #34A853;
+    border-left:20px solid #EA4335;
+    border-left: 20px solid #FBBC05;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    padding: 0;
+  }
+  
+  #google:before {
+    content: " ";
+      position: absolute;
+      border: 20px solid transparent;
+      border-left: 20px solid #EA4335;
+      width: 52px;
+      height: 53px;
+      border-radius: 100px;
+      left: -18px;
+      transform: rotate(420deg);
+      top: -21px;
+  }
+  
+  #google:after {
+  content: "";
+      border-bottom: 20px solid #4285F4;
+      width: 49px;
+      height: 30px;
+      position: absolute;
+      left: 30px;
+      top: -9px;
+      background-image: linear-gradient(
+  314deg
+  , #ffffff 50%, transparent 51%);
+      background-size: 70px 40px;
+      background-position: -20px 0px;
+      background-repeat: no-repeat;
+  }
