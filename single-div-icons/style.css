@@ -67,7 +67,7 @@
     position: absolute;
     margin: 20px 0 0 35px;
     background-image:linear-gradient(0deg, #ffffff 50%,transparent 51%);
-    background-positon:0 0;
+    background-position:0 0;
   }
   
   #record:after {
@@ -90,7 +90,6 @@
     border-top: 20px solid #EA4335;
     border-right: 20px solid #4285F4;
     border-bottom: 20px solid #34A853;
-    border-left:20px solid #EA4335;
     border-left: 20px solid #FBBC05;
     border-radius: 50%;
     background-color: #FFFFFF;
