@@ -1,0 +1,215 @@
+#bi-cycle{
+    position:relative;
+    margin:3em;
+    border:1px solid;
+    height:200px;
+    width:300px; 
+    overflow:hidden;
+  }
+  .left-wheel,.right-wheel {
+    width:60px;
+    height:60px;
+    border-radius:40px;
+    border:5px solid #000000; 
+    position:absolute;
+    animation:wheel 1s ease-out;
+  }
+  .left-wheel {
+    top:80px;
+    left:55px;
+  }
+  .right-wheel {
+    top:80px;
+    left:180px
+  }
+  .handle-bar {
+    width:20px;
+    height:0px;
+    border:5px solid blue;
+    border-radius:5px 0 0 5px;
+    position:absolute;
+    left:100px;
+    top:30px;
+    opacity:1;
+    animation:parts 4s ease-in;
+  }
+  .handle-bar:before {
+    content:"";
+    width:20px;
+    height:6px;
+    border-radius:5px 0 0 0px;
+    position:absolute;
+    background-color:white;
+    margin-left:5px
+  }
+  .center-v-bars {
+    width:100px;
+    height:100px;
+    background-image:linear-gradient(180deg,#ff0000 10%,transparent 11%);
+    position:absolute;
+    top:50px;
+    left:100px;
+    animation:center-v-bar 2s ease-out; 
+  }
+  .center-v-bars:before,
+  .center-v-bars:after{
+   content:"";
+    position:absolute;
+    width:80px;
+    height:10px;
+    background-color:red;
+    transform:rotate(45deg);
+    top:30px;
+    left:-8px;
+  }
+  
+  .center-v-bars:after {
+    transform: rotate(-52deg);
+      left: 41px;
+      width: 68px;
+  }
+  
+  .center-low-bars {
+     width: 65px;
+      height: 100px;
+      position: relative;
+      border-top: 10px solid red;
+      top: 46px;
+      right: -127px;
+      transform: rotate(
+  70deg);
+      animation:center-low-bar 2s ease-out;
+  }
+  .center-low-bars:before {
+   content:"";
+    position:absolute;
+    width:60px;
+    height:10px;
+    background-color:red;
+    transform:rotate(108deg);
+    top:22px;
+    left:23px;
+  }
+  
+  .center-low-bars:after {
+    content:"";
+    position:absolute;
+    height:30px;
+    width:30px;
+    background-color:red;
+    border-radius:20px;
+    top: -17px;
+    left: 48px;
+  }
+  .front-bar {
+    position: absolute;
+      width: 75px;
+      height: 10px;
+      background-color: red;
+      top: 72px;
+      left: 60px;
+      transform: rotate(104deg);
+      border-radius: 3px;
+      animation:front-bar 2s ease-in;
+  }
+  .front-bar:after {
+      content: '';
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      border: 2px solid;
+      border-radius: 15px;
+      top: -8px;
+      left: 64px;
+      background-image: radial-gradient(red 40%, white 41%);
+  }
+  .paddle {
+    width:20px;
+    height:7px;
+    border-radius:3px;
+    background-color:blue;
+    position:absolute;
+    left:140px;
+    top:130px;
+    animation:paddle 4s ease-out; 
+  }
+  .paddle:before {
+    content: '';
+      width: 12px;
+      height: 12px;
+      position: absolute;
+      border: 2px solid;
+      border-radius: 10px;
+      top: -24px;
+      left: 8px;
+      background-image: radial-gradient(blue 40%, white 41%);
+  }
+  
+  .paddle:after {
+    content: '';
+      width: 2px;
+      height: 15px;
+      border: 2px solid blue;
+      position: absolute;
+      top: -15px;
+      transform: rotate(
+  17deg);
+      left: 10px;
+  }
+  .seat {
+    width: 36px;
+      height: 20px;
+      position: absolute;
+      background-image: linear-gradient(
+  350deg, blue 60%, transparent 61%);
+      border-radius: 0 20px 8px 8px;
+    top:28px;
+    left:175px;
+    opacity:1;
+    animation:parts 4s ease-in;
+  }
+  
+  @keyframes wheel {
+    0% {
+      top:-200px;
+    }
+    100% {
+      top:80px;
+    }
+  }
+  @keyframes front-bar {
+    0% {
+      left:-200px;
+    }
+    100% {
+      left:60px;
+    }
+  }
+  @keyframes center-v-bar {
+    0% {
+      top:550px;
+    }
+    100% {
+      top:50px;
+    }
+  }
+  
+  @keyframes center-low-bar {
+    0% {
+      right:-550px;
+    }
+    100% {
+      right:-127px;
+    }
+  }
+  
+  @keyframes parts {
+    0% {  opacity:0;} 
+    60% {  opacity:0;} 
+    100% {  opacity:1;}
+  }
+  
+  @keyframes paddle {
+    0% {  top:85px;transform:scale(0);transform:rotate(0deg);}
+    100% {  top:130px;transform:scale(1);transform:rotate(360deg);}
+  }
